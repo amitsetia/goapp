@@ -28,7 +28,7 @@ podTemplate(yaml: '''
               path: config.json
 ''') {
   node(POD_LABEL) {
-    stage('Get a Flask project') {
+    stage('Get a GO project') {
       git url: 'https://github.com/amitsetia/goapp.git', branch: 'main'
     }
 
